@@ -123,3 +123,82 @@
     width: 21vw;
     height: 67vh;
   }
+
+
+
+
+  /* For mobile devices */
+  @media only screen and (max-width:700px){
+    .navbar a {
+      position: relative;
+      top: 2vh;
+      right: 33vw;
+      font-size: 5vw;
+      font-family:'Brush Script MT', cursive;
+      color:black;
+      text-align: center;
+      text-decoration: none;
+      margin-right:2vw ;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      text-decoration: underline;
+    }
+    .top-name a{
+      position: relative;
+      color: black;
+      font-family:'Allan';
+      letter-spacing: 0.4vw;
+      top: 0.5vh;
+      left: 1vw;
+      font-size: 8vw;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .img {
+      position: relative;
+      right: 40vw;
+      top: 12vh;
+      width: 40vw; 
+      height: 30vh;
+    }
+
+    .head-container {
+      position: relative;
+      width:fit-content;
+      height:fit-content;
+      top: 5vh;
+      right: 20vh; 
+    }
+  
+
+    .head-container h1 {
+      position: relative;
+      font-family:'Kalam', cursive;
+      font-style: italic;
+      font-size: 5vw;
+      white-space: nowrap;
+    }
+  
+    .head-container p {
+      position: relative;
+      font-family:'Kalam';
+      font-size: 3vw;
+    }
+    .icon-bar {
+      position: fixed;
+      top: 70%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    
+    .footer {
+      justify-self: center;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    
+    
+  }
