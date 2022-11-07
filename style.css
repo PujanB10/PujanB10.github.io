@@ -116,6 +116,7 @@
   }
 
   .img {
+    position: relative;
     padding-left: 9vw;
     width: 21vw;
     height: 67vh;
