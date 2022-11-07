@@ -105,12 +105,14 @@
   }
 
   .head-container h1 {
+    position: relative;
     font-family:'Kalam', cursive;
     font-style: italic;
     font-size: 3vw;
   }
 
   .head-container p {
+    position: relative;
     font-family:'Kalam';
     font-size: 1.25vw;
   }
