@@ -15,6 +15,7 @@
 }
 
 .footer {
+  font-size: 1vw;
   justify-self: center;
   grid-column-start: 1;
   grid-column-end: 4;
@@ -188,13 +189,14 @@
     }
     .icon-bar {
       position: fixed;
-      top: 70%;
+      top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
     }
     
     .footer {
+      font-size: vw;
       justify-self: center;
       grid-column-start: 1;
       grid-column-end: 4;
