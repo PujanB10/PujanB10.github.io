@@ -4,49 +4,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="icon.jpg" type="image/icon type">
-  <title>Projects</title>
+  <meta name="description" content="Work and experience — Pujan Bhattarai.">
+  <meta name="theme-color" content="#0b0c0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="icon.jpg" type="image/jpeg">
+  <title>Work — Pujan Bhattarai</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-  <div class="grid-container">
-    <div class="grid-item grid-item-1">
-      <div class="top-name">
-        <a href="index.html">Pujan Bhattarai</a>
-     </div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell">
+      <a class="wordmark" href="index.html">pujan</a>
+      <nav class="navbar" aria-label="Primary">
+        <a href="projects.html" aria-current="page">Work</a>
+        <a href="blogs.html">Notes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <div class="grid-item grid-item-2 dashboard">
-      <div class="navbar">
-        <a href="blogs.html">Blogs</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>  
-      </div> 
+  </header>
+
+  <main id="main" class="page-main shell">
+    <div class="page-copy">
+      <p class="kicker">Work</p>
+      <h1>Where I’ve spent my <em>focus.</em></h1>
+      <p class="lede">Domain work across web and mobile — described without naming client products.</p>
     </div>
 
-
-    <div class="grid-item grid-item-3">
-      <div class="icon-bar">
-        <a href="https://www.facebook.com/pujannb/" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com/PujanBh45405259" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/pujanb/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <section class="section" aria-labelledby="focus-label">
+      <p class="section-label" id="focus-label">Focus areas</p>
+      <div class="domain-grid">
+        <article class="domain">
+          <h3>E-commerce &amp; subscriptions</h3>
+          <p>Storefronts for products and services, advanced order flows, background job scheduling, and payment rails including card networks and Apple Pay.</p>
+          <span class="tag">Flutter · Nuxt · Payments</span>
+        </article>
+        <article class="domain">
+          <h3>Event management</h3>
+          <p>End-to-end event stacks: secure POS ticket scanning, admin dashboards for live coordination, and streaming clients for Android TV.</p>
+          <span class="tag">Kotlin · Flutter · Backend</span>
+        </article>
+        <article class="domain">
+          <h3>Investment platforms</h3>
+          <p>Consumer-facing investment products with KYC, third-party payments, and asset transfer engines serving tens of thousands of daily users.</p>
+          <span class="tag">Full-stack</span>
+        </article>
+        <article class="domain">
+          <h3>Loyalty &amp; engagement</h3>
+          <p>Ongoing feature work and performance tuning on loyalty experiences — keeping sessions stable and engagement high.</p>
+          <span class="tag">Mobile</span>
+        </article>
+        <article class="domain">
+          <h3>Real-time communication</h3>
+          <p>WebSocket chat with push notifications, designed for 20k+ concurrent users and high message delivery reliability.</p>
+          <span class="tag">Sockets · FCM</span>
+        </article>
+        <article class="domain">
+          <h3>Release engineering</h3>
+          <p>CI/CD with Fastlane and Codemagic — automating mobile releases and cutting manual deployment time by a large margin.</p>
+          <span class="tag">Fastlane · Codemagic · AWS</span>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <div class="grid-item grid-item-4">
-      <div class="head-container">
-            </div>
-    </div>
+    <section class="section" aria-labelledby="roles-label">
+      <p class="section-label" id="roles-label">Roles</p>
+      <ol class="timeline">
+        <li>
+          <span class="when">Jan 2025 — Present</span>
+          <div>
+            <h3>Software Engineer II</h3>
+            <p>Own delivery across web and mobile: high-scale messaging, commerce platforms, investment tooling, and mentoring through reviews and architecture guidance.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">May 2024 — Dec 2024</span>
+          <div>
+            <h3>Software Engineer I</h3>
+            <p>Launched event products on aggressive timelines, embedded multi-gateway checkout, and modernized mobile stacks with Flutter and Kotlin.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Sep 2023 — Apr 2024</span>
+          <div>
+            <h3>Associate Software Engineer</h3>
+            <p>APIs, auth, and data work for apps at 50k+ downloads; introduced automated release pipelines that removed most of the manual publish path.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-    <div class="grid-item grid-item-5">
+    <section class="section" aria-labelledby="skills-label">
+      <p class="section-label" id="skills-label">Stack</p>
+      <div class="skills">
+        <div>
+          <h3>Languages</h3>
+          <ul>
+            <li>TypeScript</li>
+            <li>Dart</li>
+            <li>Kotlin</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Frameworks</h3>
+          <ul>
+            <li>Nuxt / Vue</li>
+            <li>Flutter / React Native</li>
+            <li>Jetpack Compose</li>
+            <li>FastAPI / Django / Node</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Platform</h3>
+          <ul>
+            <li>PostgreSQL · MySQL · MongoDB</li>
+            <li>AWS · Cloudflare · Firebase</li>
+            <li>GitHub Actions · Fastlane</li>
+            <li>Codemagic · Postman</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>© 2026 Pujan Bhattarai</span>
+      <nav class="socials" aria-label="Social">
+        <a href="https://github.com/PujanB10">GitHub</a>
+        <a href="https://www.linkedin.com/in/pujanb/">LinkedIn</a>
+        <a href="mailto:bhattaraipoozan@gmail.com">Email</a>
+      </nav>
     </div>
-    <!-- <div class="grid-item grid-item-6"></div> -->
-    <div class="grid-item grid-item-6 footer">&copy; Pujan Bhattarai,2022</div>
-  </div>
+  </footer>
 </body>
 
 </html>

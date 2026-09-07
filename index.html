@@ -4,54 +4,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="icon.jpg" type="image/icon type">
+  <meta name="description" content="Pujan Bhattarai — software engineer building web and mobile products across e-commerce, events, and real-time systems.">
+  <meta name="theme-color" content="#0b0c0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="icon.jpg" type="image/jpeg">
   <title>Pujan Bhattarai</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-  <div class="grid-container">
-    <div class="grid-item grid-item-1">
-      <div class="top-name">
-        <a href="index.html">Pujan Bhattarai</a>
-     </div>
-    </div>
-    <div class="grid-item grid-item-2 dashboard">
-      <div class="navbar">
-        <a href="blogs.html">Blogs</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>  
-      </div> 
-    </div>
+  <a class="skip" href="#main">Skip to content</a>
 
+  <header class="site-header">
+    <div class="shell">
+      <a class="wordmark" href="index.html">pujan</a>
+      <nav class="navbar" aria-label="Primary">
+        <a href="projects.html">Work</a>
+        <a href="blogs.html">Notes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="grid-item grid-item-3">
-      <div class="icon-bar">
-        <a href="https://www.facebook.com/pujannb/" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com/PujanBh45405259" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/pujanb/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <main id="main">
+    <section class="hero shell">
+      <p class="kicker">Kathmandu · Software engineer</p>
+      <h1>Building products across <em>web &amp; mobile.</em></h1>
+      <p class="lede">I design and ship full-stack and native experiences — from checkout flows and admin tools to real-time messaging that holds up under load.</p>
+      <div class="actions">
+        <a class="btn" href="projects.html">View experience</a>
+        <a class="btn btn-ghost" href="mailto:bhattaraipoozan@gmail.com">Email me</a>
       </div>
-    </div>
+      <ul class="stack">
+        <li>TypeScript</li>
+        <li>Flutter</li>
+        <li>Kotlin</li>
+        <li>Python</li>
+        <li>Nuxt</li>
+      </ul>
+    </section>
 
-    <div class="grid-item grid-item-4">
-      <div class="head-container">
-        <h1>Hi, I'm Pujan.</h1>
-        <p>I'm an undergraduate student currently pursuing a degree<br>on Computer Science and Information Technology. Interested <br> in and learning various
-            aspects of Mobile App Development, Linux,<br> FOSS, Data Science.  
-        </p>
-            </div>
-    </div>
+    <section class="section shell" aria-labelledby="domains-label">
+      <p class="section-label" id="domains-label">Domains</p>
+      <div class="domain-grid">
+        <article class="domain">
+          <h3>E-commerce</h3>
+          <p>Product and service storefronts with order management, subscriptions, and multi-gateway checkout.</p>
+          <span class="tag">Web · Mobile</span>
+        </article>
+        <article class="domain">
+          <h3>Event management</h3>
+          <p>Ticketing ecosystems, POS scanning, live admin dashboards, and streaming for large venues.</p>
+          <span class="tag">Mobile · Backend</span>
+        </article>
+        <article class="domain">
+          <h3>Fintech &amp; investment</h3>
+          <p>Platforms for asset flows, KYC validation, and third-party payment rails at consumer scale.</p>
+          <span class="tag">Full-stack</span>
+        </article>
+        <article class="domain">
+          <h3>Real-time systems</h3>
+          <p>Socket-driven chat and notifications built for tens of thousands of concurrent sessions.</p>
+          <span class="tag">Mobile · Infra</span>
+        </article>
+      </div>
+    </section>
 
-    <div class="grid-item grid-item-5">
-      <img class="img" src="mob.jpeg">
+    <section class="section shell" aria-labelledby="exp-label">
+      <p class="section-label" id="exp-label">Experience</p>
+      <ol class="timeline">
+        <li>
+          <span class="when">2025 — Now</span>
+          <div>
+            <h3>Software Engineer II</h3>
+            <p>Leading full-stack and mobile delivery across investment, commerce, and high-concurrency messaging — with mentorship and AI-assisted delivery baked into the workflow.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2024</span>
+          <div>
+            <h3>Software Engineer I</h3>
+            <p>Shipped event platforms under tight deadlines, payment-integrated commerce, and native tooling for scanning and live coordination.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">2023 — 2024</span>
+          <div>
+            <h3>Associate Software Engineer</h3>
+            <p>Built APIs, auth, and release pipelines for cross-platform apps — cutting deployment time substantially with Fastlane and Codemagic.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>© 2026 Pujan Bhattarai</span>
+      <nav class="socials" aria-label="Social">
+        <a href="https://github.com/PujanB10">GitHub</a>
+        <a href="https://www.linkedin.com/in/pujanb/">LinkedIn</a>
+        <a href="mailto:bhattaraipoozan@gmail.com">Email</a>
+      </nav>
     </div>
-    <!-- <div class="grid-item grid-item-6"></div> -->
-    <div class="grid-item grid-item-6 footer">&copy; Pujan Bhattarai,2022</div>
-  </div>
+  </footer>
 </body>
 
 </html>
