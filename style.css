@@ -27,6 +27,8 @@ html,
 body {
   margin: 0;
   min-height: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -77,9 +79,12 @@ a {
 }
 
 .shell {
-  width: min(100%, var(--max));
-  margin: 0 auto;
-  padding: 0 var(--pad);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-left: max(var(--pad), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--pad), env(safe-area-inset-right, 0px));
 }
 
 .site-header {
@@ -138,7 +143,7 @@ a {
 }
 
 .hero {
-  padding: clamp(3.5rem, 12vh, 7rem) 0 3.5rem;
+  padding-block: clamp(3.5rem, 12vh, 7rem) 3.5rem;
   max-width: 44rem;
 }
 
@@ -166,10 +171,12 @@ a {
 .page-copy h1 {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: clamp(2.6rem, 6.5vw, 4.6rem);
-  line-height: 1.02;
+  font-size: clamp(2.2rem, 8.4vw, 4.6rem);
+  line-height: 1.05;
   letter-spacing: -0.04em;
   margin: 0 0 1.2rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .hero h1 em,
@@ -185,6 +192,7 @@ a {
   color: var(--muted);
   font-size: clamp(1.02rem, 1.4vw, 1.16rem);
   font-weight: 300;
+  overflow-wrap: break-word;
 }
 
 .actions {
@@ -229,6 +237,7 @@ a {
   list-style: none;
   margin: 2rem 0 0;
   padding: 0;
+  max-width: 100%;
   color: var(--muted);
   font-size: 0.86rem;
 }
@@ -248,7 +257,7 @@ a {
 }
 
 .section {
-  padding: 0 0 4.5rem;
+  padding-block: 0 4.5rem;
 }
 
 .section-label {
@@ -338,7 +347,7 @@ a {
 }
 
 .page-main {
-  padding: clamp(3rem, 10vh, 5.5rem) 0 4.5rem;
+  padding-block: clamp(3rem, 10vh, 5.5rem) 4.5rem;
 }
 
 .page-copy {
@@ -457,7 +466,48 @@ a {
 
 @media (max-width: 800px) {
   :root {
-    --pad: 1.35rem;
+    --pad: 1.5rem;
+  }
+
+  .shell {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .hero,
+  .page-copy {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .hero h1,
+  .page-copy h1 {
+    font-size: 2.15rem;
+    max-width: 100%;
+  }
+
+  .lede {
+    max-width: 100%;
+  }
+
+  .domain-grid,
+  .timeline,
+  .skills,
+  .contact-list,
+  .stack,
+  .actions,
+  .domain {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .domain p,
+  .timeline p,
+  .lede,
+  .contact-list a {
+    overflow-wrap: anywhere;
   }
 
   .site-header .shell {
@@ -493,7 +543,7 @@ a {
 
 @media (max-width: 420px) {
   :root {
-    --pad: 1.15rem;
+    --pad: 1.35rem;
   }
 }
 
